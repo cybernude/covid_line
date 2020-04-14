@@ -21,7 +21,7 @@ def _lineNotify(payload,file=None):
     import requests
     url = 'https://notify-api.line.me/api/notify'
     # token = ''	#ญาติโก
-    token = ''	#q รพ
+    token = 'My Token'	#q รพ
 
     headers = {'Authorization':'Bearer '+token}
     return requests.post(url, headers=headers , data = payload, files=file)
